@@ -107,7 +107,7 @@ const Destinos = () => {
 
   return (
     <div className="destinos_main">
-      <img src="/src/assets/guia.png" />
+      <img src="https://github.com/juliomc23/regalo-front/blob/main/src/assets/guia.png" />
 
       <div className="formulario">
         <h1>Dime sitios donde te gustaría ir</h1>

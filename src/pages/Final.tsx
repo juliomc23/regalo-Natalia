@@ -32,7 +32,7 @@ const Final = () => {
 
   return (
     <div className="fechas_div">
-      <img src="/src/assets/guia.png" />
+      <img src="https://github.com/juliomc23/regalo-front/blob/main/src/assets/guia.png" />
 
       <div className="destinos_div">
         <h1>
