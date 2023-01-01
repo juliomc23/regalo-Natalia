@@ -14,7 +14,7 @@ const Final = () => {
 
   useEffect(() => {
     const getDestinos = async () => {
-      const response = await fetch("http://localhost:3000/destinos/");
+      const response = await fetch("https://regalo-back.vercel.app/destinos");
       const data: Destinos[] = await response.json();
 
       setDestinos(data);
@@ -25,7 +25,7 @@ const Final = () => {
 
   const start = () => {
     navigate("/");
-    fetch("http://localhost:3000/destinos/", {
+    fetch("https://regalo-back.vercel.app/destinos", {
       method: "DELETE",
     });
   };

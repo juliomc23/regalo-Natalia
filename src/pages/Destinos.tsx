@@ -19,7 +19,7 @@ const Destinos = () => {
 
   useEffect(() => {
     const getDestinos = async () => {
-      const response = await fetch("http://localhost:3000/destinos/");
+      const response = await fetch("https://regalo-back.vercel.app/destinos");
       const data = await response.json();
 
       setSitios(data);
@@ -57,7 +57,7 @@ const Destinos = () => {
     // const input = target.children[0] as HTMLInputElement;
 
     // peticion back para enviar los sitios
-    const response = await fetch("http://localhost:3000/destinos", {
+    const response = await fetch("https://regalo-back.vercel.app/destinos", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -85,7 +85,7 @@ const Destinos = () => {
     console.log(sitio._id);
 
     const response = await fetch(
-      `http://localhost:3000/destinos/${sitio._id}`,
+      `https://regalo-back.vercel.app/destinos/${sitio._id}`,
       {
         method: "DELETE",
       }
