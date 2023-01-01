@@ -1,0 +1,155 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 2rem;
+}
+
+.app {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+.dialogo {
+  width: 20rem;
+  min-height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  left: 72rem;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.circle {
+  border: 2px solid black;
+  position: absolute;
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.circle1 {
+  width: 2rem;
+  height: 2rem;
+  top: 15rem;
+  left: 70rem;
+}
+
+.circle2 {
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 17rem;
+  left: 68rem;
+}
+
+.circle3 {
+  width: 1rem;
+  height: 1rem;
+  top: 19rem;
+  left: 66rem;
+}
+
+.continue_button {
+  all: unset;
+  border: 1px solid white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: #330000;
+  color: white;
+  font-weight: bold;
+  border-radius: 2rem;
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+.continue_button:hover {
+  transform: scale(1.1);
+}
+
+/* =========================================== */
+
+.destinos_main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form_section {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.sitios_input {
+  all: unset;
+  width: 25rem;
+  border: 2px solid white;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.fecha_input {
+  all: unset;
+  border: 2px solid white;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.sitios {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fechas_div {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.destinos_div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.destinos_li > a {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.finish {
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
