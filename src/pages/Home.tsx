@@ -41,7 +41,7 @@ const Home = (props: Props) => {
   return (
     <div className="main">
       <div className="app">
-        <img src="https://github.com/juliomc23/regalo-front/blob/main/src/assets/guia.png" />
+        <img src="https://github.com/juliomc23/regalo-front/blob/main/src/assets/guia.png?raw=true" />
         <div className="dialogo">{dialog}</div>
         <div className="circle circle1"></div>
         <div className="circle circle2"></div>
