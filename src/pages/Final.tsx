@@ -32,7 +32,10 @@ const Final = () => {
 
   return (
     <div className="fechas_div">
-      <img src="https://github.com/juliomc23/regalo-front/blob/main/src/assets/guia.png?raw=true" />
+      <img
+        src="https://github.com/juliomc23/regalo-front/blob/main/src/assets/guia.png?raw=true"
+        className="guia_final"
+      />
 
       <div className="destinos_div">
         <h1>
@@ -52,7 +55,7 @@ const Final = () => {
           ))}
         </ul>
 
-        <button className="continue_button finish" onClick={start}>
+        <button className="finish" onClick={start}>
           Gracias Oiluj, tengo mis destinos!
         </button>
       </div>
