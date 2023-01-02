@@ -19,7 +19,7 @@ const Destinos = () => {
 
   useEffect(() => {
     const getDestinos = async () => {
-      const response = await fetch("https://regalo-back.vercel.app/destinos");
+      const response = await fetch("http://localhost:3000/destinos");
       const data = await response.json();
 
       setSitios(data);
@@ -57,7 +57,7 @@ const Destinos = () => {
     // const input = target.children[0] as HTMLInputElement;
 
     // peticion back para enviar los sitios
-    const response = await fetch("https://regalo-back.vercel.app/destinos", {
+    const response = await fetch("http://localhost:3000/destinos", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -85,7 +85,7 @@ const Destinos = () => {
     console.log(sitio._id);
 
     const response = await fetch(
-      `https://regalo-back.vercel.app/destinos/${sitio._id}`,
+      `http://localhost:3000/destinos/${sitio._id}`,
       {
         method: "DELETE",
       }
@@ -107,14 +107,22 @@ const Destinos = () => {
 
   return (
     <div className="destinos_main">
-      <img src="https://github.com/juliomc23/regalo-front/blob/main/src/assets/guia.png?raw=true" />
+      <img
+        src="https://github.com/juliomc23/regalo-front/blob/main/src/assets/guia.png?raw=true"
+        className="guia_img_destinos"
+      />
 
       <div className="formulario">
         <h1>Dime sitios donde te gustaría ir</h1>
         <form onSubmit={añadirSitio} className="form_section">
           <div style={{ display: "flex", gap: "1rem" }}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <label htmlFor="entrada">Entrada</label>
+            <div
+              style={{ display: "flex", flexDirection: "column" }}
+              className="form_div_group"
+            >
+              <label htmlFor="entrada" className="label">
+                Entrada
+              </label>
               <input
                 type="date"
                 onChange={cambiarFecha}
@@ -123,7 +131,9 @@ const Destinos = () => {
               />
             </div>
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <label htmlFor="salida">Salida</label>
+              <label htmlFor="salida" className="label">
+                Salida
+              </label>
               <input
                 type="date"
                 onChange={cambiarFecha}
@@ -158,7 +168,7 @@ const Destinos = () => {
             ))}
           </ul>
         </div>
-        <button className="continue_button" onClick={changeUrl}>
+        <button className="finish_button" onClick={changeUrl}>
           Continuar
         </button>
       </div>

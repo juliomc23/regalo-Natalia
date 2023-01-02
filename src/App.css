@@ -19,7 +19,9 @@
 .dialogo {
   width: 20rem;
   min-height: 7rem;
+  gap: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -28,7 +30,8 @@
   padding: 1rem;
   border: 2px solid black;
   border-radius: 2rem;
-  color: white !important;
+  background-color: transparent;
+  color: white;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -43,33 +46,44 @@
 .circle1 {
   width: 2rem;
   height: 2rem;
-  top: 15rem;
-  left: 70rem;
+  top: 16.5rem;
+  left: 69rem;
 }
 
 .circle2 {
   width: 1.5rem;
   height: 1.5rem;
-  top: 17rem;
-  left: 68rem;
+  top: 19rem;
+  left: 67rem;
 }
 
 .circle3 {
   width: 1rem;
   height: 1rem;
-  top: 19rem;
-  left: 66rem;
+  top: 22rem;
+  left: 65rem;
 }
 
 .continue_button {
   all: unset;
-  border: 1px solid white;
-  padding: 1rem;
   font-size: 1.1rem;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  transition: all 300ms;
+  cursor: pointer;
+  width: 2rem;
+}
+
+.finish_button {
+  all: unset;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 2rem;
   background-color: #330000;
   color: white;
   font-weight: bold;
-  border-radius: 2rem;
   transition: all 300ms;
   cursor: pointer;
 }
@@ -152,4 +166,61 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 450px) {
+  .app {
+    flex-direction: column;
+    position: unset;
+    gap: 0.5rem;
+  }
+
+  .dialogo {
+    position: unset;
+    background: white;
+    color: black;
+  }
+
+  .dialogo > p {
+    background: white;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .guia_img {
+    width: 20rem;
+  }
+
+  .destinos_main {
+    flex-direction: column;
+    /* height: auto; */
+  }
+
+  .guia_img_destinos {
+    width: 10rem;
+  }
+
+  .formulario {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form_section {
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .label {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .sitios_input {
+    width: 23rem;
+  }
 }
